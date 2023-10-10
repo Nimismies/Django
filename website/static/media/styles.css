@@ -1,0 +1,72 @@
+/* Style for the main container */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style for the logo image */
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for animated navbar buttons */
+.navbar {
+    background-color: #333; /* Background color for the navbar */
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Add animation to button hover */
+}
+
+.navbar a:hover {
+    background-color: #ddd; /* Change button background color on hover */
+    color: black;
+}
+
+/* Style for the dropdown menu */
+.dropdown-menu {
+    background-color: #333; /* Background color for the dropdown menu */
+}
+
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #555; /* Change menu item background color on hover */
+    color: white;
+}
+
+/* Style for the active dropdown item */
+.dropdown-item.active {
+    background-color: #555; /* Background color for the active item */
+    color: white;
+}
+
+body {
+    background-color: rgb(87, 138, 155);
+}
+
+.bs-example {
+    margin: 30px;
+    height: 120px;
+    overflow: scroll;
+}
+
+.button {
+    height: 30px;
+}
+
+

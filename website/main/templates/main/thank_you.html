@@ -1,0 +1,18 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<body>
+<h2>Thank you for contacting us!</h2>
+<p>We will get back to you soon.</p>
+<p>You will be redirected to homepage automatically!</p>
+<script>
+    // Wait for the page to load before redirecting
+    window.onload = function () {
+        // Redirect to the home page after 3 seconds (adjust the delay as needed)
+        setTimeout(function () {
+            window.location.href = "{% url 'home' %}"; // Replace 'home' with the actual URL name of your home page
+        }, 3000); // 3000 milliseconds (3 seconds)
+    };
+</script>
+</body>
+{% endblock %}
