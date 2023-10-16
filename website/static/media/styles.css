@@ -15,7 +15,7 @@
 
 /* Style for animated navbar buttons */
 .navbar {
-    background-color: black; /* Background color for the navbar */
+    background-color: rgb(4, 6, 100); /* Background color for the navbar */
 }
 
 .navbar a {
@@ -28,12 +28,25 @@
     transition: background-color 0.3s ease; /* Add animation to button hover */
     font: 1em sans-serif;
     font-weight: bold;
+    border-radius: 10px; 
 }
 
 .navbar a:hover {
-    background-color: black; /* Change button background color on hover */
+    background-color: rgb(66, 105, 233); /* Change button background color on hover */
     color: black;
+    border-radius: 10px; 
 }
+
+.dropdown-toggle{
+
+    color: white;
+}
+
+.dropdown-toggle.show{
+
+    color: white;
+}
+
 
 .dropdown-menu.show{
 
@@ -58,7 +71,7 @@
 }
 
 .dropdown-menu a:hover {
-    background-color: transparent; /* Change menu item background color on hover */
+    background-color: rgb(66, 105, 233); /* Change menu item background color on hover */
     color: white;
 }
 
