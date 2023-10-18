@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'crispy_bootstrap5',
     'djongo',
     'chatbot',
-    'contact',    
+    'contact',
+    'website'
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
@@ -59,6 +60,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 ROOT_URLCONF = 'website.urls'
 
@@ -94,6 +97,21 @@ DATABASES = {
         'password': 'JKARoHxkVCYNsOwf',
     }
 }
+}
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'ERROR',
+            'class': 'logging.FileHandler',
+            'filename': 'error.log',
+        },
+    },
+    'root': {
+        'handlers': ['file'],
+        'level': 'ERROR',
+    },
 }
 
 

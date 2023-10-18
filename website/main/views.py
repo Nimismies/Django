@@ -1,12 +1,15 @@
-from django.urls import reverse
 import requests
+from django.urls import reverse
 from django.shortcuts import render, redirect
-from .forms import RegisterForm, PostForm, ContactForm
+from main.forms import RegisterForm, PostForm
 from django.contrib.auth.decorators import login_required, permission_required
-from django.contrib.auth import login, logout, authenticate
+from django.contrib.auth import login
 from django.contrib.auth.models import User, Group
 from .models import Post
-from django.core.mail import send_mail
+from django.db.utils import IntegrityError
+from django.contrib import messages
+
+
 
 
 # @login_required(login_url="/login")
@@ -73,6 +76,7 @@ def create_post(request):
             post.author = request.user
             post.save()
             return redirect("/home")
+           
     else:
         form = PostForm()
 
@@ -83,13 +87,18 @@ def sign_up(request):
     if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
+           try: 
             user = form.save()
             login(request, user)
             return redirect('/home')
+           except IntegrityError: # Virheilmoitus jos käyttäjänimi on jo varattu
+               messages.error(request,'username or password not correct')
+        else:
+            messages.error(request, 'Form is not valid. Please check your input.')
+            return render(request, 'registration/sign_up.html', {"form": form})                 
     else:
         form = RegisterForm()
+        return render(request, 'registration/sign_up.html', {"form": form})
 
-    return render(request, 'registration/sign_up.html', {"form": form})
 
-from django.core.mail import send_mail
 

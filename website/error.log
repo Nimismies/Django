@@ -1,0 +1,53 @@
+
+Internal Server Error: /sign_up
+Traceback (most recent call last):
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\website\main\views.py", line 105, in sign_up
+    if form.add_error():
+       ^^^^^^^^^^^^^^^^
+TypeError: BaseForm.add_error() missing 2 required positional arguments: 'field' and 'error'
+Internal Server Error: /sign_up
+Traceback (most recent call last):
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view main.views.sign_up didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /sign_up
+Traceback (most recent call last):
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view main.views.sign_up didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /sign_up
+Traceback (most recent call last):
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view main.views.sign_up didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /sign_up
+Traceback (most recent call last):
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view main.views.sign_up didn't return an HttpResponse object. It returned None instead.
