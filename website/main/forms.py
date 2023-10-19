@@ -4,9 +4,11 @@ from django.contrib.auth.models import User
 from .models import Post
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Submit
+from captcha.fields import CaptchaField
 
 
 class RegisterForm(UserCreationForm):
+    captcha = CaptchaField()
     email = forms.EmailField(required=True)
 
     class Meta:
@@ -21,6 +23,7 @@ class PostForm(forms.ModelForm):
 
 
 class ContactForm(forms.Form):
+    captcha = CaptchaField()
     name = forms.CharField(label='Your Name', max_length=100)
     email = forms.EmailField(label='Your Email', max_length=100)
     message = forms.CharField(label='Your Message', widget=forms.Textarea)

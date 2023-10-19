@@ -41,10 +41,12 @@ INSTALLED_APPS = [
     'main.apps.MainConfig',
     'crispy_forms',
     'crispy_bootstrap5',
-    'djongo',
+    'psycopg2',
     'chatbot',
     'contact',
-    'website'
+    'website',
+    'defender',
+    'captcha'
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
@@ -59,6 +61,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'defender.middleware.FailedLoginMiddleware',
 ]
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
@@ -87,15 +90,27 @@ WSGI_APPLICATION = 'website.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+#DATABASES = {
+#        'default': {
+            #'ENGINE': 'djongo',
+            #'NAME': 'Django',
+            #'CLIENT': {
+                #'host': 'mongodb+srv://verkkosivuttesti:JKARoHxkVCYNsOwf@django.0yrsdnd.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp',
+                #'username': 'verkkosivuttesti',
+                #'password': 'JKARoHxkVCYNsOwf',
+    #}
+#}
+#}
+
 DATABASES = {
         'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'Django',
-        'CLIENT': {
-        'host': 'mongodb+srv://verkkosivuttesti:JKARoHxkVCYNsOwf@django.0yrsdnd.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp',
-        'username': 'verkkosivuttesti',
-        'password': 'JKARoHxkVCYNsOwf',
-    }
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'User',
+            'USER': 'postgres',
+            'PASSWORD':'Admin',
+            'HOST': 'localhost',
+            'PORT':'5432'
+
 }
 }
 LOGGING = {

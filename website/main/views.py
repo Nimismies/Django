@@ -87,6 +87,7 @@ def sign_up(request):
     if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
+           human = True
            try: 
             user = form.save()
             login(request, user)

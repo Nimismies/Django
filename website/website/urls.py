@@ -18,10 +18,12 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    path('admin/defender/', include('defender.urls')),
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
     path('', include('django.contrib.auth.urls')),
     path("", include("chatbot.urls")),# Include chatbot app URLs
     path('contact/', include('contact.urls')),
+    path('captcha/', include('captcha.urls')),
 
 ]

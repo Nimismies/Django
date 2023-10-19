@@ -1,53 +1,123 @@
-
-Internal Server Error: /sign_up
+Internal Server Error: /admin/defender/accessattempt/
 Traceback (most recent call last):
   File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\jokikatu\django\website\main\views.py", line 105, in sign_up
-    if form.add_error():
-       ^^^^^^^^^^^^^^^^
-TypeError: BaseForm.add_error() missing 2 required positional arguments: 'field' and 'error'
-Internal Server Error: /sign_up
-Traceback (most recent call last):
-  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
-    self.check_response(response, callback)
-  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\base.py", line 309, in check_response
-    raise ValueError(
-ValueError: The view main.views.sign_up didn't return an HttpResponse object. It returned None instead.
-Internal Server Error: /sign_up
-Traceback (most recent call last):
-  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
-    self.check_response(response, callback)
-  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\base.py", line 309, in check_response
-    raise ValueError(
-ValueError: The view main.views.sign_up didn't return an HttpResponse object. It returned None instead.
-Internal Server Error: /sign_up
-Traceback (most recent call last):
-  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
-    self.check_response(response, callback)
-  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\base.py", line 309, in check_response
-    raise ValueError(
-ValueError: The view main.views.sign_up didn't return an HttpResponse object. It returned None instead.
-Internal Server Error: /sign_up
-Traceback (most recent call last):
-  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
-    self.check_response(response, callback)
-  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\base.py", line 309, in check_response
-    raise ValueError(
-ValueError: The view main.views.sign_up didn't return an HttpResponse object. It returned None instead.
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\defaulttags.py", line 312, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 33, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\template\library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 379, in date_hierarchy
+    'choices': [{
+               ^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\db\models\query.py", line 280, in __iter__
+    self._fetch_all()
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\db\models\query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\db\models\query.py", line 171, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1124, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1156, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 507, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+                                       ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 55, in pre_sql_setup
+    self.setup_query()
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 46, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select()
+                                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 262, in get_select
+    sql, params = self.compile(col)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 439, in compile
+    sql, params = node.as_sql(self, self.connection)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\db\models\functions\datetime.py", line 202, in as_sql
+    sql = connection.ops.datetime_trunc_sql(self.kind, inner_sql, tzname)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jokikatu\django\venv\Lib\site-packages\django\db\backends\base\operations.py", line 142, in datetime_trunc_sql
+    raise NotImplementedError('subclasses of BaseDatabaseOperations may require a datetime_trunc_sql() method')
+NotImplementedError: subclasses of BaseDatabaseOperations may require a datetime_trunc_sql() method
