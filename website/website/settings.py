@@ -46,8 +46,11 @@ INSTALLED_APPS = [
     'contact',
     'website',
     'defender',
-    'captcha'
+    'captcha',
+    'django_mfa'
+  
 ]
+
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
@@ -62,7 +65,12 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'defender.middleware.FailedLoginMiddleware',
+    'django_mfa.middleware.MfaMiddleware',
 ]
+
+MFA_ISSUER_NAME = 'website'
+MFA_REMEMBER_MY_BROWSER = True
+MFA_REMEMBER_DAYS = 30
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 

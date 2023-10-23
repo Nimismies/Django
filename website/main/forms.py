@@ -5,6 +5,7 @@ from .models import Post
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Submit
 from captcha.fields import CaptchaField
+from django_cryptography.fields import encrypt
 
 
 class RegisterForm(UserCreationForm):
@@ -33,3 +34,7 @@ class ContactForm(forms.Form):
         self.helper = FormHelper()
         self.helper.form_method = 'post'
         self.helper.add_input(Submit('submit', 'Submit'))
+
+
+
+        
