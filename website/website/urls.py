@@ -18,13 +18,13 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('MyPageadmin/defender/', include('defender.urls')),
-    path('MyPageadmin/', admin.site.urls),
-    path('', include('main.urls')),
+    path('MyPageadmin/defender/', include('defender.urls')), # Admin defender URL
+    path('MyPageadmin/', admin.site.urls), # Admin site URL
+    path('', include('main.urls')),# Homepage site URL
     path('', include('django.contrib.auth.urls')),
-    path("", include("chatbot.urls")),# Include chatbot app URLs
-    path('contact/', include('contact.urls')),
-    path('captcha/', include('captcha.urls')),
-    path('settings/', include('django_mfa.urls')),
+    path('', include("chatbot.urls")),# Chatbot site URL
+    path('contact/', include('contact.urls')), # Contactform site URL
+    path('captcha/', include('captcha.urls')), # Captcha URL
+    path('settings/', include('django_mfa.urls')), # MFA URL
 
 ]
