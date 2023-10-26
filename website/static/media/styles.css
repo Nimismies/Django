@@ -7,12 +7,6 @@
     padding: 20px;
 }
 
-/* Style for the logo image */
-.logo {
-    max-width: 100%;
-    height: auto;
-}
-
 /* Style for animated navbar buttons */
 .navbar {
     background-color: rgb(4, 6, 100); /* Background color for the navbar */
@@ -37,7 +31,15 @@
     border-radius: 10px; 
 }
 
-.dropdown-toggle{
+
+.dropdown-toggle{ 
+
+    
+    color: white !important; /* Muuttaa menun värin, mitä etsin pitkään!!!! */
+}
+
+.dropdown-toggle.active{
+
 
     color: white;
 }
